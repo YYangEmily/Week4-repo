@@ -12,7 +12,20 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Challenge 1
 
 ```{r Challenge 1}
+#library(manipulate)
+#outcomes <- c(1, 2, 3, 4, 5, 6)
+#manipulate(hist(sample(outcomes, n, replace = TRUE), breaks = c(0.5, 1.5, 2.5,
+#    3.5, 4.5, 5.5, 6.5), probability = TRUE, main = paste("Histogram of Outcomes of ",
+#    n, " Die Rolls", sep = ""), xlab = "roll", ylab = "probability"), n = #slider(0,
+ #   10000, initial = 100, step = 100))
 
+#nrolls <- 1000
+#roll <- function(x) {
+ #   sample(1:6, x, replace = TRUE)
+#}
+#two_dice <- roll(nrolls) + roll(nrolls)
+#hist(two_dice, breaks = c(1.5:12.5), probability = TRUE, main = "Rolling Two Dice",
+#    xlab = "sum of rolls", ylab = "probability")
 
 ```
 ## Challenge 2
@@ -44,3 +57,11 @@ Pr (B) = not a face card = 40/52
 Pr (A ⋂ B) = club and not a face card = 10/52
 
 Pr (A ⋃ B) = Pr (A) + Pr (B) - Pr (A ⋂ B) = 13/52 + 40/52 - 10/52 = 43/52
+
+## Challenge 3
+``` {r Challenge 3}
+outcomes <- c("heads", "tails")
+prob <- c(1/2, 1/2)
+barplot(prob, ylim = c(0, 0.6), names.arg = outcomes, space = 0.1, xlab = "outcome",
+    ylab = "Pr(X = outcome)", main = "Probability Mass Function")
+```
