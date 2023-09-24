@@ -1,0 +1,46 @@
+---
+title: "Module 8"
+author: "Emily Yang"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Challenge 1
+
+```{r Challenge 1}
+
+
+```
+## Challenge 2
+What is the probability that you draw a face card? 12/52 <br>
+
+What is the probability that you draw a King? 4/52
+
+What is the probability that you draw a spade? 13/52
+
+What is the probability that you draw a spade given that you draw a face card? 3/12
+
+What is the probability that you draw a King given that you draw a face card? 4/12
+
+What is the probability that you draw a card that is both from a red suit (hearts or diamonds) and a face card?
+
+Pr (A) = red suit = 26/52 = 1/2
+
+Pr (B) = face card = 12/52 =
+
+Pr (A | B) = red suit given face card = 6/12
+
+Pr (A ⋂ B) = Pr (A | B) × Pr (B) = 6/12 × 12/52 = 6/52 = 0.1153846
+
+What is the probability that you draw a card that is either a club or not a face card?
+
+Pr (A) = club = 13/52 = 13/52
+Pr (B) = not a face card = 40/52
+
+Pr (A ⋂ B) = club and not a face card = 10/52
+
+Pr (A ⋃ B) = Pr (A) + Pr (B) - Pr (A ⋂ B) = 13/52 + 40/52 - 10/52 = 43/52
