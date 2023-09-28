@@ -11,7 +11,7 @@
 
 <meta name="author" content="Emily Yang" />
 
-<meta name="date" content="2023-09-24" />
+<meta name="date" content="2023-09-28" />
 
 <title>Module 8</title>
 
@@ -352,27 +352,27 @@ display: none;
 
 <h1 class="title toc-ignore">Module 8</h1>
 <h4 class="author">Emily Yang</h4>
-<h4 class="date">2023-09-24</h4>
+<h4 class="date">2023-09-28</h4>
 
 </div>
 
 
 <div id="challenge-1" class="section level2">
 <h2>Challenge 1</h2>
-<pre class="r"><code>#library(manipulate)
-#outcomes &lt;- c(1, 2, 3, 4, 5, 6)
-#manipulate(hist(sample(outcomes, n, replace = TRUE), breaks = c(0.5, 1.5, 2.5,
- #   3.5, 4.5, 5.5, 6.5), probability = TRUE, main = paste(&quot;Histogram of Outcomes of &quot;,
-#    n, &quot; Die Rolls&quot;, sep = &quot;&quot;), xlab = &quot;roll&quot;, ylab = &quot;probability&quot;), n = slider(0,
-#    10000, initial = 100, step = 100))
+<p>Paste directly into console to get slider</p>
+<pre class="r"><code>library(manipulate)
+outcomes &lt;- c(1, 2, 3, 4, 5, 6)
+manipulate(hist(sample(outcomes, n, replace = TRUE), breaks = c(0.5, 1.5, 2.5,
+    3.5, 4.5, 5.5, 6.5), probability = TRUE, main = paste(&quot;Histogram of Outcomes of &quot;,
+    n, &quot; Die Rolls&quot;, sep = &quot;&quot;), xlab = &quot;roll&quot;, ylab = &quot;probability&quot;), n = slider(0, 10000, initial = 100, step = 100))
 
-#nrolls &lt;- 1000
-#roll &lt;- function(x) {
- #   sample(1:6, x, replace = TRUE)
-#}
-#two_dice &lt;- roll(nrolls) + roll(nrolls)
-#hist(two_dice, breaks = c(1.5:12.5), probability = TRUE, main = &quot;Rolling Two Dice&quot;,
-#    xlab = &quot;sum of rolls&quot;, ylab = &quot;probability&quot;)</code></pre>
+nrolls &lt;- 1000
+roll &lt;- function(x) {
+   sample(1:6, x, replace = TRUE)
+}
+two_dice &lt;- roll(nrolls) + roll(nrolls)
+hist(two_dice, breaks = c(1.5:12.5), probability = TRUE, main = &quot;Rolling Two Dice&quot;,
+    xlab = &quot;sum of rolls&quot;, ylab = &quot;probability&quot;)</code></pre>
 </div>
 <div id="challenge-2" class="section level2">
 <h2>Challenge 2</h2>
